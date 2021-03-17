@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  // height: 100%;
+  padding: 16px;
+  background-color: #252326;
+  background-position: center center, center, center;
+  background-attachment: fixed, fixed;
+  background-size: auto, cover;
+}
+
+body {
+  // height: 100%;
+  margin: 0;
+  font: 16px/24px normal 'Open Sans', trebuchet, sans-serif;
+  font-weight: 100;
+}
+
+.brick {
+  display: inline-block;
+  width: 100%;
+  // padding: 16px;
+  padding-left: 15px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  background-color: #e7e7e7;
+  vertical-align: top;
+}
+
+.icon {
+  display: inline-block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  font-size: 1.5em;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a.brick {
+  position: relative;
+  font-family: inherit;
+  font-weight: inherit;
+  color: #616161;
+  color: #252326;
+  line-height: 2;
+  background-color: #252326;
+  background-color: #f3f3f3;
+  background-color: #e7e7e7;
+  border-left: 3px solid #616161;
+}
+
+nav ul li a.brick .icon {
+  // position: absolute;
+  right: 0;
+  top: 0;
+  height: 64px;
+  width: 64px;
+  font-size: 2em;
+  color: #fff;
+  line-height: 2.25;
+  background: #616161;
+}
+
+nav ul li a.dashboard {
+  border-color: #b93861;
+}
+
+nav ul li a.dashboard .icon {
+  background-color: #b93861;
+}
+
+nav ul li a.pages {
+  border-color: #34abd7;
+}
+
+nav ul li a.pages .icon {
+  background-color: #34abd7;
+}
+
+nav ul li a.navigation {
+  border-color: #158a53;
+}
+
+nav ul li a.navigation .icon {
+  background-color: #158a53;
+}
+
+nav ul li a.users {
+  border-color: #d95235;
+}
+
+nav ul li a.users .icon {
+  background-color: #d95235;
+}
+
+@media all and (min-width: 800px) {
+  header > hgroup {
+    height: 120px;
+    color: #fff;
+  }
+
+  nav {
+    // position: absolute;
+    width: 250px;
+  }
+}
