@@ -9,6 +9,9 @@ h5 {
   text-transform: uppercase;
   color: #095484;
 }
+label{
+  color: #095484;
+}
 .main-block {
   display: flex;
   justify-content: center;
@@ -18,7 +21,8 @@ h5 {
 form {
   //   width: 100%;
   padding: 45px 50px;
-  box-shadow: 0 2px 5px #ccc;
+  box-shadow: 6px 6px 12px #ccc;
+  background-color: lavender;
   //   background: #fff;
 }
 input {

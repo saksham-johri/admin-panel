@@ -42,60 +42,61 @@ const Dashboard = props => {
   const renderCourceList = () => {
     return (
       <>
-        <div style={{ display: 'flex', alignSelf: 'flex-end', margin: 10 }}>
+        <div style={{ display: "flex", alignSelf: "flex-end", margin: 10 }}>
           <h2
             style={{
               fontWeight: 600,
-              cursor: 'pointer',
-              userSelect: 'none',
+              cursor: "pointer",
+              userSelect: "none",
+              color: "red",
             }}
             onClick={() => {
-              setActiveTab('addCource');
+              setActiveTab("addCource");
             }}
           >
-            Add New Cource
+            Add New Course
           </h2>
         </div>
 
         <div>
           {data?.map((item, index) => {
-            const { title = '', description = '' } = item || {};
+            const { title = "", description = "" } = item || {};
             return (
               <div
                 key={index}
                 style={{
-                  backgroundColor: 'white',
+                  backgroundColor: "white",
                   margin: 5,
                   padding: 10,
-                  width: '50em',
+                  width: "50em",
                 }}
               >
-                <p style={{ fontSize: 14, color: '#000' }}>
+                <p style={{ fontSize: 14, color: "#000" }}>
                   <span style={{ fontSize: 16, fontWeight: 600 }}>Title: </span>
                   {title}
                 </p>
 
-                <p style={{ fontSize: 14, color: '#000' }}>
+                <p style={{ fontSize: 14, color: "#000" }}>
                   <span style={{ fontSize: 16, fontWeight: 600 }}>
-                    Description:{' '}
+                    Description:{" "}
                   </span>
                   {description}
                 </p>
 
                 <div
                   style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
+                    display: "flex",
+                    justifyContent: "space-between",
                     marginTop: 20,
                   }}
                 >
                   <p
                     style={{
                       fontSize: 14,
-                      color: 'blueviolet',
+                      color: "blueviolet",
                       fontWeight: 600,
-                      cursor: 'pointer',
-                      userSelect: 'none',
+                      cursor: "pointer",
+                      userSelect: "none",
                     }}
                     onClick={() => {}}
                   >
@@ -104,10 +105,10 @@ const Dashboard = props => {
                   <p
                     style={{
                       fontSize: 14,
-                      color: 'blueviolet',
+                      color: "blueviolet",
                       fontWeight: 600,
-                      cursor: 'pointer',
-                      userSelect: 'none',
+                      cursor: "pointer",
+                      userSelect: "none",
                     }}
                     onClick={() => {}}
                   >
