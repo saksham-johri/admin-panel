@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AddCource from '../../components/addCource';
+import AddSubject from "../../components/addSubject";
 import './style.scss';
 
 const Dashboard = props => {
@@ -110,7 +111,9 @@ const Dashboard = props => {
                       cursor: "pointer",
                       userSelect: "none",
                     }}
-                    onClick={() => {}}
+                    onClick={() => {
+                      setActiveTab("addSubject");
+                    }}
                   >
                     Add Subject
                   </p>
@@ -131,36 +134,36 @@ const Dashboard = props => {
         </hgroup>
       </header>
 
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: "flex" }}>
         <nav>
           <ul>
             <li>
               <a
-                class='brick dashboard'
-                href='javascript:void(0)'
-                onClick={() => setActiveTab('courceList')}
+                class="brick dashboard"
+                href="javascript:void(0)"
+                onClick={() => setActiveTab("courceList")}
               >
-                <span class='icon'></span>Cources
+                <span class="icon"></span>Cources
               </a>
             </li>
             <li>
-              <a class='brick pages' href='javascript:void(0)'>
-                <span class='icon'></span>Subjects
+              <a class="brick pages" href="javascript:void(0)">
+                <span class="icon"></span>Subjects
               </a>
             </li>
             <li>
-              <a class='brick navigation' href='javascript:void(0)'>
-                <span class='icon'></span>Navigation
+              <a class="brick navigation" href="javascript:void(0)">
+                <span class="icon"></span>Navigation
               </a>
             </li>
             <li>
-              <a class='brick users' href='javascript:void(0)'>
-                <span class='icon'></span>Users
+              <a class="brick users" href="javascript:void(0)">
+                <span class="icon"></span>Users
               </a>
             </li>
             <li>
-              <a class='brick settings' href='javascript:void(0)'>
-                <span class='icon'></span>Website Settings
+              <a class="brick settings" href="javascript:void(0)">
+                <span class="icon"></span>Website Settings
               </a>
             </li>
           </ul>
@@ -168,19 +171,20 @@ const Dashboard = props => {
 
         <div
           style={{
-            display: 'flex',
-            flexDirection: 'column',
+            display: "flex",
+            flexDirection: "column",
             flex: 1,
-            alignItems: 'center',
+            alignItems: "center",
           }}
         >
-          {activeTab === 'courceList' && renderCourceList()}
+          {activeTab === "courceList" && renderCourceList()}
 
-          {activeTab === 'addCource' && <AddCource />}
+          {activeTab === "addCource" && <AddCource />}
+          {activeTab === "addSubject" && <AddSubject />}
         </div>
       </div>
 
-      <footer style={{ height: '5vh' }} />
+      <footer style={{ height: "5vh" }} />
     </>
   );
 };

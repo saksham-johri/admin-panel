@@ -3,7 +3,7 @@ import "./style.scss";
 
 const AddCource = () => {
   return (
-    <div class="main-block">
+    <div>
       {/* <form action='javascript:void(0)'>
         <h1>Course Evaluation Survey</h1>
         <h4>COURSE</h4>
@@ -19,7 +19,7 @@ const AddCource = () => {
         </div>
       </form> */}
       <form>
-            <div class="form-group">
+        <div class="form-group">
           <label for="courseName">Course Name</label>
           <input
             type="text"
@@ -57,7 +57,7 @@ const AddCource = () => {
         </div>
         <div class="form-group">
           <label for="courseDescription">Course Description</label>
-          <input
+          <textarea
             type="text"
             class="form-control"
             id="courseDescription"
