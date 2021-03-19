@@ -89,8 +89,8 @@ form {
     display: block;
     appearance: none;
     outline: 0;
-    border: 1px solid rgba(255,255,255,0.4);
-    background-color: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
     width: 250px;
 
     border-radius: 3px;
@@ -100,13 +100,13 @@ form {
     text-align: center;
     font-size: 18px;
 
-    color: white;
+    // color: white;
 
     transition-duration: 0.25s;
     font-weight: 300;
 
     &:hover {
-      background-color: rgba(255,255,255,0.4);
+      background-color: rgba(255, 255, 255, 0.4);
     }
 
     &:focus {
@@ -151,7 +151,7 @@ form {
     display: block;
     width: 40px;
     height: 40px;
-    background-color: rgba(255,255,255,0.15);
+    background-color: rgba(255, 255, 255, 0.15);
     bottom: -160px;
 
     -webkit-animation: square 25s infinite;
@@ -186,7 +186,7 @@ form {
 
       animation-duration: 22s;
 
-      background-color: rgba(255,255,255,0.2);
+      background-color: rgba(255, 255, 255, 0.2);
     }
 
     &:nth-child(5) {
@@ -199,7 +199,7 @@ form {
       height: 120px;
 
       animation-delay: 3s;
-      background-color: rgba(255,255,255,0.2);
+      background-color: rgba(255, 255, 255, 0.2);
     }
 
     &:nth-child(7) {
@@ -226,7 +226,7 @@ form {
 
       animation-delay: 2s;
       animation-duration: 40s;
-      background-color: rgba(255,255,255,0.3);
+      background-color: rgba(255, 255, 255, 0.3);
     }
 
     &:nth-child(10) {

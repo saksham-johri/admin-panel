@@ -1,106 +1,107 @@
-import React, { useState } from "react";
-import AddCource from "../../components/addCource";
-import AddSubject from "../../components/addSubject";
-import ViewSubjects from "../../components/viewSubjects";
-import "./style.scss";
+import React, { useState } from 'react';
+import AddCource from '../../components/addCource';
+import AddSubject from '../../components/addSubject';
+import ViewSubjects from '../../components/viewSubjects';
+import './style.scss';
 
-const Dashboard = (props) => {
-  const tabs = ["courceList", "addCource", "subjects"];
-  const [activeTab, setActiveTab] = useState("courceList");
+const Dashboard = props => {
+  const [activeTab, setActiveTab] = useState('courceList');
 
   const data = [
     {
-      name: "fwejrngj uihuh ir",
-      category: "fghjkl",
-      createdBy: "gikjj",
-      price: "12345",
+      name: 'fwejrngj uihuh ir',
+      category: 'fghjkl',
+      createdBy: 'gikjj',
+      price: '12345',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      prerequisite: "dfghj fghjk",
-      learning: "qwertyuiop",
+      prerequisite: 'dfghj fghjk',
+      learning: 'qwertyuiop',
     },
     {
-      name: "fwejrngj uihuh ir",
-      category: "fghjkl",
-      createdBy: "gikjj",
-      price: "12345",
+      name: 'fwejrngj uihuh ir',
+      category: 'fghjkl',
+      createdBy: 'gikjj',
+      price: '12345',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      prerequisite: "dfghj fghjk",
-      learning: "qwertyuiop",
+      prerequisite: 'dfghj fghjk',
+      learning: 'qwertyuiop',
     },
     {
-      name: "fwejrngj uihuh ir",
-      category: "fghjkl",
-      createdBy: "gikjj",
-      price: "12345",
+      name: 'fwejrngj uihuh ir',
+      category: 'fghjkl',
+      createdBy: 'gikjj',
+      price: '12345',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      prerequisite: "dfghj fghjk",
-      learning: "qwertyuiop",
-    },
-
-    {
-      name: "fwejrngj uihuh ir",
-      category: "fghjkl",
-      createdBy: "gikjj",
-      price: "12345",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      prerequisite: "dfghj fghjk",
-      learning: "qwertyuiop",
+      prerequisite: 'dfghj fghjk',
+      learning: 'qwertyuiop',
     },
 
     {
-      name: "fwejrngj uihuh ir",
-      category: "fghjkl",
-      createdBy: "gikjj",
-      price: "12345",
+      name: 'fwejrngj uihuh ir',
+      category: 'fghjkl',
+      createdBy: 'gikjj',
+      price: '12345',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      prerequisite: "dfghj fghjk",
-      learning: "qwertyuiop",
+      prerequisite: 'dfghj fghjk',
+      learning: 'qwertyuiop',
     },
 
     {
-      name: "fwejrngj uihuh ir",
-      category: "fghjkl",
-      createdBy: "gikjj",
-      price: "12345",
+      name: 'fwejrngj uihuh ir',
+      category: 'fghjkl',
+      createdBy: 'gikjj',
+      price: '12345',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      prerequisite: "dfghj fghjk",
-      learning: "qwertyuiop",
+      prerequisite: 'dfghj fghjk',
+      learning: 'qwertyuiop',
     },
 
     {
-      name: "fwejrngj uihuh ir",
-      category: "fghjkl",
-      createdBy: "gikjj",
-      price: "12345",
+      name: 'fwejrngj uihuh ir',
+      category: 'fghjkl',
+      createdBy: 'gikjj',
+      price: '12345',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      prerequisite: "dfghj fghjk",
-      learning: "qwertyuiop",
-    }
+      prerequisite: 'dfghj fghjk',
+      learning: 'qwertyuiop',
+    },
+
+    {
+      name: 'fwejrngj uihuh ir',
+      category: 'fghjkl',
+      createdBy: 'gikjj',
+      price: '12345',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      prerequisite: 'dfghj fghjk',
+      learning: 'qwertyuiop',
+    },
   ];
-  const addCourse = (obj) => {
+
+  const addCourse = obj => {
     data.push(obj);
-    console.log("data", data);
+    console.log('data', data);
   };
+
   const renderCourceList = () => {
     return (
       <>
-        <div style={{ display: "flex", alignSelf: "flex-end", margin: 10 }}>
+        <div style={{ display: 'flex', alignSelf: 'flex-end', margin: 10 }}>
           <h2
             style={{
               fontWeight: 600,
-              cursor: "pointer",
-              userSelect: "none",
-              color: "red",
+              cursor: 'pointer',
+              userSelect: 'none',
+              color: 'red',
             }}
             onClick={() => {
-              setActiveTab("addCource");
+              setActiveTab('addCource');
             }}
           >
             Add New Course
@@ -110,87 +111,105 @@ const Dashboard = (props) => {
         <div>
           {data?.map((item, index) => {
             const {
-              name = "",
+              name = '',
 
-              price = "",
+              price = '',
 
-              category = "",
+              category = '',
 
-              createdBy = "",
+              createdBy = '',
 
-              prerequisite = "",
+              prerequisite = '',
 
-              description = "",
+              description = '',
 
-              learning = "",
+              learning = '',
             } = item || {};
             return (
               <div
-              className="row"
+                className='row'
                 key={index}
                 style={{
-                  backgroundColor: "white",
+                  backgroundColor: 'white',
                   margin: 5,
                   padding: 10,
-                  width: "50em",
+                  width: '50em',
                 }}
               >
-                <p className="col-6" style={{ fontSize: 14, color: "#000" }}>
-                  <span style={{ fontSize: 16, fontWeight: 600 }}>Course Name: </span>
+                <p className='col-6' style={{ fontSize: 14, color: '#000' }}>
+                  <span style={{ fontSize: 16, fontWeight: 600 }}>
+                    Course Name:{' '}
+                  </span>
                   {name}
                 </p>
-                <p className="col-6" style={{ fontSize: 14, color: "#000" }}>
-                  <span style={{ fontSize: 16, fontWeight: 600 }}>Course category: </span>
+                <p className='col-6' style={{ fontSize: 14, color: '#000' }}>
+                  <span style={{ fontSize: 16, fontWeight: 600 }}>
+                    Course category:{' '}
+                  </span>
                   {category}
-                </p><p className="col-6" style={{ fontSize: 14, color: "#000" }}>
-                  <span style={{ fontSize: 16, fontWeight: 600 }}>Course price: </span>
+                </p>
+                <p className='col-6' style={{ fontSize: 14, color: '#000' }}>
+                  <span style={{ fontSize: 16, fontWeight: 600 }}>
+                    Course price:{' '}
+                  </span>
                   {price}
-                </p><p className="col-6" style={{ fontSize: 14, color: "#000" }}>
-                  <span style={{ fontSize: 16, fontWeight: 600 }}>Course prerequisite: </span>
+                </p>
+                <p className='col-6' style={{ fontSize: 14, color: '#000' }}>
+                  <span style={{ fontSize: 16, fontWeight: 600 }}>
+                    Course prerequisite:{' '}
+                  </span>
                   {prerequisite}
-                </p><p className="col-6" style={{ fontSize: 14, color: "#000" }}>
-                  <span style={{ fontSize: 16, fontWeight: 600 }}>Course createdBy: </span>
+                </p>
+                <p className='col-6' style={{ fontSize: 14, color: '#000' }}>
+                  <span style={{ fontSize: 16, fontWeight: 600 }}>
+                    Course createdBy:{' '}
+                  </span>
                   {createdBy}
-                </p><p className="col-6" style={{ fontSize: 14, color: "#000" }}>
-                  <span style={{ fontSize: 16, fontWeight: 600 }}>Course learning: </span>
+                </p>
+                <p className='col-6' style={{ fontSize: 14, color: '#000' }}>
+                  <span style={{ fontSize: 16, fontWeight: 600 }}>
+                    Course learning:{' '}
+                  </span>
                   {learning}
                 </p>
-                <p style={{ fontSize: 14, color: "#000" }}>
+                <p style={{ fontSize: 14, color: '#000' }}>
                   <span style={{ fontSize: 16, fontWeight: 600 }}>
-                    Description:{" "}
+                    Description:{' '}
                   </span>
                   {description}
                 </p>
 
                 <div
                   style={{
-                    display: "flex",
-                    justifyContent: "space-between",
+                    display: 'flex',
+                    justifyContent: 'space-between',
                     marginTop: 20,
                   }}
                 >
                   <p
                     style={{
                       fontSize: 14,
-                      color: "blueviolet",
+                      color: 'blueviolet',
                       fontWeight: 600,
-                      cursor: "pointer",
-                      userSelect: "none",
+                      cursor: 'pointer',
+                      userSelect: 'none',
                     }}
-                    onClick={() => { setActiveTab("viewSubjects")}}
+                    onClick={() => {
+                      setActiveTab('viewSubjects');
+                    }}
                   >
                     View Subjects
                   </p>
                   <p
                     style={{
                       fontSize: 14,
-                      color: "blueviolet",
+                      color: 'blueviolet',
                       fontWeight: 600,
-                      cursor: "pointer",
-                      userSelect: "none",
+                      cursor: 'pointer',
+                      userSelect: 'none',
                     }}
                     onClick={() => {
-                      setActiveTab("addSubject");
+                      setActiveTab('addSubject');
                     }}
                   >
                     Add Subject
@@ -208,40 +227,20 @@ const Dashboard = (props) => {
     <>
       <header>
         <hgroup>
-          <h1>Example Client Website Name</h1>
+          <h1 style={{ color: '#171717' }}>Example Client Website Name</h1>
         </hgroup>
       </header>
 
-      <div style={{ display: "flex" }}>
+      <div style={{ display: 'flex' }}>
         <nav>
           <ul>
             <li>
               <a
-                class="brick dashboard"
-                href="javascript:void(0)"
-                onClick={() => setActiveTab("courceList")}
+                class='brick dashboard'
+                href='javascript:void(0)'
+                onClick={() => setActiveTab('courceList')}
               >
-                <span class="icon"></span>Cources
-              </a>
-            </li>
-            <li>
-              <a class="brick pages" href="javascript:void(0)">
-                <span class="icon"></span>Subjects
-              </a>
-            </li>
-            <li>
-              <a class="brick navigation" href="javascript:void(0)">
-                <span class="icon"></span>Navigation
-              </a>
-            </li>
-            <li>
-              <a class="brick users" href="javascript:void(0)">
-                <span class="icon"></span>Users
-              </a>
-            </li>
-            <li>
-              <a class="brick settings" href="javascript:void(0)">
-                <span class="icon"></span>Website Settings
+                <span class='icon'></span>Cources
               </a>
             </li>
           </ul>
@@ -249,21 +248,21 @@ const Dashboard = (props) => {
 
         <div
           style={{
-            display: "flex",
-            flexDirection: "column",
+            display: 'flex',
+            flexDirection: 'column',
             flex: 1,
-            alignItems: "center",
+            alignItems: 'center',
           }}
         >
-          {activeTab === "courceList" && renderCourceList()}
+          {activeTab === 'courceList' && renderCourceList()}
 
-          {activeTab === "addCource" && <AddCource addCourse={addCourse} />}
-          {activeTab === "addSubject" && <AddSubject />}
-          {activeTab=== "viewSubjects" && <ViewSubjects />}
+          {activeTab === 'addCource' && <AddCource addCourse={addCourse} />}
+          {activeTab === 'addSubject' && <AddSubject />}
+          {activeTab === 'viewSubjects' && <ViewSubjects />}
         </div>
       </div>
 
-      <footer style={{ height: "5vh" }} />
+      <footer style={{ height: '5vh' }} />
     </>
   );
 };

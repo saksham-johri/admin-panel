@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './style.scss';
 
 const Login = props => {
+  const { history = {} } = props;
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -27,7 +28,11 @@ const Login = props => {
             onChange={e => setPassword(e.target.value)}
             placeholder='Password'
           />
-          <button type='submit' id='login-button'>
+          <button
+            type='submit'
+            id='login-button'
+            onClick={() => history.push('dashboard')}
+          >
             Login
           </button>
         </form>
