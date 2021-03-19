@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AddCource from "../../components/addCource";
 import AddSubject from "../../components/addSubject";
+import ViewSubjects from "../../components/viewSubjects";
 import "./style.scss";
 
 const Dashboard = (props) => {
@@ -176,7 +177,7 @@ const Dashboard = (props) => {
                       cursor: "pointer",
                       userSelect: "none",
                     }}
-                    onClick={() => { setActiveTab("viewSubject")}}
+                    onClick={() => { setActiveTab("viewSubjects")}}
                   >
                     View Subjects
                   </p>
@@ -258,6 +259,7 @@ const Dashboard = (props) => {
 
           {activeTab === "addCource" && <AddCource addCourse={addCourse} />}
           {activeTab === "addSubject" && <AddSubject />}
+          {activeTab=== "viewSubjects" && <ViewSubjects />}
         </div>
       </div>
 
