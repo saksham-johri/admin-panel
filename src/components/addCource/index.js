@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.scss";
 
-const AddCource = () => {
+const AddCource = ({  addCourse  }) => {
+  const [courseName, setCourseName] = useState("");
+  const [category, setCategory] = useState("");
+  const [createdBy, setCreatedBy] = useState("");
+  const [price, setPrice] = useState("");
+  const [desc, setDesc] = useState("");
+  const [prerequisite, setPrerequisite] = useState("");
+  const [learning, setLearning] = useState("");
+
+  const handleSubmit = (e) => {
+    let obj = {
+      name: courseName,
+      category: category,
+      createdBy: createdBy,
+      price: price,
+      desc: desc,
+      prerequisite: prerequisite,
+      learning: learning,
+    };
+    addCourse(obj);
+    console.log("courses", obj);
+  };
   return (
     <div>
       {/* <form action='javascript:void(0)'>
@@ -18,13 +39,15 @@ const AddCource = () => {
           </button>
         </div>
       </form> */}
-      <form>
+      <form onSubmit={handleSubmit}>
         <div class="form-group">
           <label for="courseName">Course Name</label>
           <input
             type="text"
             class="form-control"
             id="courseName"
+            value={courseName}
+            onChange={(e) => setCourseName(e.target.value)}
             placeholder="Enter Course Name"
           />
         </div>
@@ -34,6 +57,8 @@ const AddCource = () => {
             type="text"
             class="form-control"
             id="courseCategory"
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
             placeholder="Enter Category"
           />
         </div>
@@ -43,6 +68,8 @@ const AddCource = () => {
             type="text"
             class="form-control"
             id="courseCreatedBy"
+            value={createdBy}
+            onChange={(e) => setCreatedBy(e.target.value)}
             placeholder="Enter Created By"
           />
         </div>
@@ -52,6 +79,8 @@ const AddCource = () => {
             type="text"
             class="form-control"
             id="coursePrice"
+            value={price}
+            onChange={(e) => setPrice(e.target.value)}
             placeholder="Enter Price"
           />
         </div>
@@ -61,6 +90,8 @@ const AddCource = () => {
             type="text"
             class="form-control"
             id="courseDescription"
+            value={desc}
+            onChange={(e) => setDesc(e.target.value)}
             placeholder="Enter Description"
           />
         </div>
@@ -70,6 +101,8 @@ const AddCource = () => {
             type="text"
             class="form-control"
             id="coursePrerequisite"
+            value={prerequisite}
+            onChange={(e) => setPrerequisite(e.target.value)}
             placeholder="Enter Prerequisite"
           />
         </div>
@@ -79,6 +112,8 @@ const AddCource = () => {
             type="text"
             class="form-control"
             id="courseLearning"
+            value={learning}
+            onChange={(e) => setLearning(e.target.value)}
             placeholder="Enter Learning"
           />
         </div>
